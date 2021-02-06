@@ -49,3 +49,23 @@
     font-weight: bold;
     margin-top: 10px;
 }
+
+@media screen and (max-width: 480px) {
+    .caixa-lista-produtos  {
+        width: auto;
+    }
+
+    .lista-produtos li {
+        display: list-item;
+        width: auto;
+        padding: 10px 5px;
+    }
+
+    .lista-produtos li:first-child {
+        padding-top: 3em;
+    }
+
+    .card-produto-imagem img {
+        width: auto;
+    }
+}

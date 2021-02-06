@@ -31,68 +31,80 @@
 
     <form action="get">
 
-      <fieldset>
-        <label for="nome-sobrenome">Nome e Sobrenome</label>
-        <input class="input-padrao" type="text" name="nome-sobrenome" id="nome-sobrenome" required>
-  
-        <label for="email">Email</label>
-        <input class="input-padrao" type="email" name="email" id="email" placeholder="seuemail@dominio.com" required>
-  
-        <label for="telefone">Telefone</label>
-        <input class="input-padrao" type="tel" name="telefone" id="telefone" placeholder="(xx) xxxxx-xxxx" required>
-  
-        <label for="mensagem">Mensagem</label>
-        <textarea class="input-padrao" name="mensagem" id="mensagem" cols="30" rows="10" required></textarea>
-      </fieldset>
+      <div class="box-dados">
+        <fieldset>
+          <label for="nome-sobrenome">Nome e Sobrenome</label>
+          <input class="input-padrao" type="text" name="nome-sobrenome" id="nome-sobrenome" required>
+    
+          <label for="email">Email</label>
+          <input class="input-padrao" type="email" name="email" id="email" placeholder="seuemail@dominio.com" required>
+    
+          <label for="telefone">Telefone</label>
+          <input class="input-padrao" type="tel" name="telefone" id="telefone" placeholder="(xx) xxxxx-xxxx" required>
+    
+          <label for="mensagem">Mensagem</label>
+          <textarea class="input-padrao" name="mensagem" id="mensagem" cols="30" rows="10" required></textarea>
+        </fieldset>
+      </div>
 
-      <fieldset class="opcao-contato">
-        <legend>Como prefere o nosso contato?</legend>
-        <label><input type="radio" name="opcao-contato" value="email">Email</label>
-        <label><input type="radio" name="opcao-contato" value="telefone">Telefone</label>
-        <label><input type="radio" name="opcao-contato" value="whatsapp" checked>Whatsapp</label>
-      </fieldset>
+      <div class="box-contato">
+        <fieldset class="opcao-contato">
+          <legend>Como prefere o nosso contato?</legend>
+          <label><input type="radio" name="opcao-contato" value="email">Email</label>
+          <label><input type="radio" name="opcao-contato" value="telefone">Telefone</label>
+          <label><input type="radio" name="opcao-contato" value="whatsapp" checked>Whatsapp</label>
+        </fieldset>
+      </div>
 
-      <fieldset class="horario-atendimento">
-        <legend>Qual horário prefere ser atendido?</legend>
-        <select name="horario-atendimento" id="horario-atendimento">
-          <option value="manha">Manhã</option>
-          <option value="tarde">Tarde</option>
-          <option value="noite">Noite</option>
-        </select>
-      </fieldset>
+      <div class="box-horario-atendimento">
+        <fieldset class="horario-atendimento">
+          <legend>Qual horário prefere ser atendido?</legend>
+          <select name="horario-atendimento" id="horario-atendimento">
+            <option value="manha">Manhã</option>
+            <option value="tarde">Tarde</option>
+            <option value="noite">Noite</option>
+          </select>
+        </fieldset>
+      </div>
 
-      <label class="checkbox"><input type="checkbox" name="novidades" id="novidades" checked>Gostaria de receber nossas novidades por email?</label>
+      <div class="box-novidades">
+        <label class="checkbox"><input type="checkbox" name="novidades" id="novidades" checked>Gostaria de receber nossas novidades por email?</label>
+      </div>
 
       <input class="enviar" type="submit" value="Enviar formulário">
 
     </form>
 
-    <table>
-
-      <thead>
-        <tr>
-          <th>Dia</th>
-          <th>Horário</th>
-        </tr>
-      </thead>
-
-      <tbody>
-        <tr>
-          <td>Segunda</td>
-          <td>8h ~ 20h</td>
-        </tr>
+    <div class="box-tabela-horarios">
+      <table>
   
-        <tr>
-          <td>Quarta</td>
-          <td>8h ~ 20h</td>
-        </tr>
-        
-        <tr>
-          <td>Sexta</td>
-          <td>8h ~ 20h</td>
-        </tr>
-      </tbody>
-    </table>
+        <thead>
+          <tr>
+            <th>Dia</th>
+            <th>Horário</th>
+          </tr>
+        </thead>
+  
+        <tbody>
+          <tr>
+            <td>Segunda</td>
+            <td>8h ~ 20h</td>
+          </tr>
+    
+          <tr>
+            <td>Quarta</td>
+            <td>8h ~ 20h</td>
+          </tr>
+          
+          <tr>
+            <td>Sexta</td>
+            <td>8h ~ 20h</td>
+          </tr>
+        </tbody>
+  
+      </table>
+    </div>
+
     
   </main>
 
